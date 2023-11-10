@@ -1,0 +1,46 @@
+body {
+    font-family: 'Courier New', monospace;
+    background-color: #f8f8f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+b, i {
+    color: #ff3366;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 40px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 8px solid #ff3366;
+    border-radius: 10px;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Retro Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+ul li {
+    animation: fadeIn 1s ease-in-out;
+}

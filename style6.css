@@ -1,0 +1,60 @@
+/* Define a keyframes animation for the header */
+@keyframes funkyHeader {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(5deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  /* Apply the animation to the header */
+  header {
+    animation: funkyHeader 4s ease-in-out infinite;
+  }
+  
+  /* Add a pulsating animation to the H1 text */
+  h1 {
+    animation: pulse 2s ease-in-out infinite;
+  }
+  
+  /* Define a keyframes animation for the pulsating effect */
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Add a hover effect for list items */
+  ul li {
+    transition: transform 0.3s ease;
+  }
+  
+  ul li:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Add a spinning animation to the social media icons */
+  ul li ul li img {
+    animation: spin 4s linear infinite;
+  }
+  
+  /* Define a keyframes animation for spinning */
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
